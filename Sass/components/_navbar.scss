@@ -1,0 +1,26 @@
+nav {
+    border: solid 1px blue;
+    width: 100%;
+
+        ul {
+            display: flex;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            border: solid 1px black;
+        
+                li {
+                    border: 1px yellow solid;
+                    padding: 15px;
+                    margin: 10px;
+                }
+
+                .link-nav {
+                    font-size: 20px;
+                }
+
+                .logo {
+                    flex-grow: 3;
+                }
+        }
+}

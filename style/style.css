@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  border: solid 1px blue;
+  width: 100%;
+}
+nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: solid 1px black;
+}
+nav ul li {
+  border: 1px yellow solid;
+  padding: 15px;
+  margin: 10px;
+}
+nav ul .link-nav {
+  font-size: 20px;
+}
+nav ul .logo {
+  flex-grow: 3;
+}/*# sourceMappingURL=style.css.map */

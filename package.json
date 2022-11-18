@@ -1,0 +1,22 @@
+{
+  "name": "les-films-de-plein-air",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Herve-Dev/P3_les_films_de_plein_air.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Herve-Dev/P3_les_films_de_plein_air/issues"
+  },
+  "homepage": "https://github.com/Herve-Dev/P3_les_films_de_plein_air#readme",
+  "description": "",
+  "dependencies": {
+    "sass": "^1.56.1"
+  }
+}
