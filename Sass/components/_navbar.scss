@@ -1,4 +1,6 @@
+@use "../utils/breakpoint" as *;
 @import url('https://fonts.googleapis.com/css2?family=Dr+Sugiyama&display=swap');
+
 
 nav {
     width: 100%;
@@ -26,11 +28,34 @@ nav {
 
                 }
 
-                .logo {
+                .link-logo {
                     flex-grow: 3;
+                }
+
+                .logo-title {
+                    margin: 0;
+                    padding: 0;
                     font-family: 'Dr Sugiyama', cursive;
                     font-size: 30px;
                     color: white;
                 }
         }
+}
+
+@include breakpoint(mobile-tablet) {
+    ul {
+        flex-direction: column;
+        
+            li {
+                text-align: center;
+            }
+
+            .link-nav {
+                width: 100%;
+            }
+    }
+
+    .link-logo {
+        display: none;
+    }
 }

@@ -1,4 +1,13 @@
 footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 0;
     height: 80px;
     background-color: black;
+
+        p {
+            color: white;
+        }
 }

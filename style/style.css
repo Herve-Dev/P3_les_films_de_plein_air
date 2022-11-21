@@ -29,13 +29,31 @@ nav ul .link-nav {
   font-family: "Dr Sugiyama", cursive;
   text-decoration: none;
 }
-nav ul .logo {
+nav ul .link-logo {
   flex-grow: 3;
+}
+nav ul .logo-title {
+  margin: 0;
+  padding: 0;
   font-family: "Dr Sugiyama", cursive;
   font-size: 30px;
   color: white;
 }
 
+@media screen and (min-width: 320px) and (max-width: 802px) {
+  ul {
+    flex-direction: column;
+  }
+  ul li {
+    text-align: center;
+  }
+  ul .link-nav {
+    width: 100%;
+  }
+  .link-logo {
+    display: none;
+  }
+}
 .bloc-banner {
   width: 100%;
   height: 75vh;
@@ -45,18 +63,88 @@ nav ul .logo {
   height: 100%;
   object-fit: cover;
 }
+.bloc-banner h2 {
+  color: white;
+}
+.bloc-banner__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: solid 2px green;
+  position: relative;
+  bottom: 500px;
+  width: 30%;
+  height: 260px;
+  left: 25px;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.bloc-banner__title {
+  margin: 0;
+}
+.bloc-banner__link {
+  padding: 10px;
+  border-radius: 20px;
+  color: white;
+  text-decoration: none;
+  background-color: #BB9457;
+}
 
+@media screen and (min-width: 320px) and (max-width: 802px) {
+  .bloc-banner__text {
+    bottom: 350px;
+    width: 80%;
+    left: 10%;
+  }
+}
 .card-home {
   width: 20%;
+  height: 250px;
   position: relative;
   bottom: 120px;
   background-color: white;
   border-radius: 15px;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+}
+.card-home__title {
+  border: solid 1px black;
+  text-align: center;
+}
+.card-home__description {
+  width: 100%;
+  height: 180px;
+  text-align: center;
+  border: solid 1px black;
 }
 
+@media screen and (min-width: 320px) and (max-width: 802px) {
+  .card-home {
+    bottom: 0;
+    width: 90%;
+    height: 250px;
+  }
+  .card-home__description {
+    height: auto;
+  }
+}
 footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 0;
   height: 80px;
   background-color: black;
+}
+footer p {
+  color: white;
 }
 
 #main-home {
@@ -64,4 +152,12 @@ footer {
   height: 350px;
   display: flex;
   justify-content: space-around;
+}
+
+@media screen and (min-width: 320px) and (max-width: 802px) {
+  #main-home {
+    flex-direction: column;
+    height: 140vh;
+    align-items: center;
+  }
 }/*# sourceMappingURL=style.css.map */
