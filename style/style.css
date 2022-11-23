@@ -1,9 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dr+Sugiyama&display=swap");
 body {
   position: absolute;
   margin: 0;
   padding: 0;
   width: 100%;
+}
+
+button {
+  width: 200px;
+  border-radius: 30px;
+  border: none;
+  height: 30px;
+  background-color: #00A35C;
+  font-family: "Merriweather", serif;
+  font-weight: bold;
 }
 
 nav {
@@ -64,6 +76,7 @@ nav ul .logo-title {
   object-fit: cover;
 }
 .bloc-banner h2 {
+  font-family: "Merriweather", serif;
   color: white;
 }
 .bloc-banner__text {
@@ -88,11 +101,13 @@ nav ul .logo-title {
   margin: 0;
 }
 .bloc-banner__link {
+  margin-top: 20px;
   padding: 10px;
   border-radius: 20px;
   color: white;
   text-decoration: none;
   background-color: #BB9457;
+  font-family: "Merriweather", serif;
 }
 
 @media screen and (min-width: 320px) and (max-width: 802px) {
@@ -106,7 +121,7 @@ nav ul .logo-title {
   width: 20%;
   height: 250px;
   position: relative;
-  bottom: 120px;
+  bottom: 30px;
   background-color: white;
   border-radius: 15px;
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
@@ -116,8 +131,10 @@ nav ul .logo-title {
 .card-home__title {
   border: solid 1px black;
   text-align: center;
+  font-family: "Merriweather", serif;
 }
 .card-home__description {
+  font-family: "Merriweather", serif;
   width: 100%;
   height: 180px;
   text-align: center;
@@ -134,6 +151,61 @@ nav ul .logo-title {
     height: auto;
   }
 }
+.card-movies {
+  border: solid 2px #BB9457;
+  width: 300px;
+  position: relative;
+  background-color: #BB9457;
+}
+.card-movies__img {
+  width: 300px;
+  object-fit: cover;
+}
+.card-movies__blc-synopsis {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.7);
+  top: 0;
+  position: absolute;
+  border: solid 1px #BB9457;
+  width: 300px;
+  height: 400px;
+  opacity: 0;
+  cursor: pointer;
+}
+.card-movies__blc-synopsis:hover {
+  transition: 2s;
+  opacity: 1;
+}
+.card-movies__blc-synopsis p, .card-movies__blc-synopsis h2 {
+  padding: 5px;
+  color: white;
+}
+.card-movies__form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  background-color: white;
+}
+.card-movies__form input {
+  margin: 10px;
+  width: 70%;
+  padding: 5px;
+}
+.card-movies__form select {
+  margin: 10px;
+  width: 50%;
+}
+.card-movies__btn-booking {
+  margin-left: 80px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  color: white;
+}
+
 footer {
   display: flex;
   justify-content: center;
@@ -144,6 +216,7 @@ footer {
   background-color: black;
 }
 footer p {
+  font-family: "Merriweather", serif;
   color: white;
 }
 
@@ -160,4 +233,10 @@ footer p {
     height: 140vh;
     align-items: center;
   }
+}
+#main-movies {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
 }/*# sourceMappingURL=style.css.map */

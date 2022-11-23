@@ -1,6 +1,5 @@
 @use "../utils/breakpoint" as *;
-@import url('https://fonts.googleapis.com/css2?family=Dr+Sugiyama&display=swap');
-
+@use "../utils/variables" as *;
 
 nav {
     width: 100%;
@@ -23,7 +22,7 @@ nav {
                 .link-nav {
                     font-size: 25px;
                     color: white;
-                    font-family: 'Dr Sugiyama', cursive;
+                    font-family: $font-nav;
                     text-decoration: none;
 
                 }
@@ -35,7 +34,7 @@ nav {
                 .logo-title {
                     margin: 0;
                     padding: 0;
-                    font-family: 'Dr Sugiyama', cursive;
+                    font-family: $font-nav;
                     font-size: 30px;
                     color: white;
                 }

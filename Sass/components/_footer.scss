@@ -1,3 +1,5 @@
+@use "../utils/variables" as *;
+
 footer {
     display: flex;
     justify-content: center;
@@ -8,6 +10,7 @@ footer {
     background-color: black;
 
         p {
+            font-family: $font-text;
             color: white;
         }
 }

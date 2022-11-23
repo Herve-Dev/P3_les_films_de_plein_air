@@ -1,0 +1,12 @@
+@use "../utils/variables" as *;
+
+button {
+    width: 200px;
+    border-radius: 30px;
+    border: none;
+    height: 30px;
+    //background-color: $color-secondary;
+    background-color: #00A35C;
+    font-family: $font-text;
+    font-weight: bold;
+}

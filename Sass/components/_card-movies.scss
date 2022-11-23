@@ -1,0 +1,64 @@
+@use "../utils/variables" as *;
+
+.card-movies {
+    border: solid 2px $color-secondary;
+    width: 300px;
+    position: relative;
+    background-color: $color-secondary;
+
+        &__img {
+            width: 300px;
+            object-fit: cover;
+        }
+
+        &__blc-synopsis {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: rgba(0,0,0,0.7);
+            top: 0;
+            position: absolute;
+            border: solid 1px $color-secondary;
+            width: 300px;
+            height: 400px;
+            opacity: 0;
+            cursor: pointer;
+
+                &:hover {
+                    transition: 2s;
+                    opacity: 1;
+                }
+
+                p, h2 {
+                    padding: 5px;
+                    color: white;
+                }
+        }
+
+        &__form {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            background-color: white;
+
+                input {
+                    margin: 10px;
+                    width: 70%;
+                    padding: 5px;
+                }
+
+                select {
+                    margin: 10px;
+                    width: 50%;
+                }     
+        }
+
+        &__btn-booking {
+            margin-left: 80px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            color: white;
+        }
+}
