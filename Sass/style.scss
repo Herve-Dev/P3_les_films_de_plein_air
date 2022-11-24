@@ -4,9 +4,12 @@
 @use "./components/banner";
 @use "./components/card-home";
 @use "./components/card-movies";
+@use "./components/form-contact";
+@use "./components/section-contact";
 @use "./components/footer";
 
 @use "./utils/variables";
 
 @use "./layout/main-home";
 @use "./layout/main-movies";
+@use "./layout/main-contact";

@@ -1,0 +1,23 @@
+.form-contact {
+    //border: solid 2px blue;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+
+        input {
+            margin: 10px;
+            padding: 10px;
+        }
+
+        textarea {
+            margin: 10px;
+            padding: 5px;
+        }
+
+        .btn-send {
+            margin-left: 400px;
+        }
+}

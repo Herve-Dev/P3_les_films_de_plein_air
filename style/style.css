@@ -206,6 +206,32 @@ nav ul .logo-title {
   color: white;
 }
 
+.form-contact {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+}
+.form-contact input {
+  margin: 10px;
+  padding: 10px;
+}
+.form-contact textarea {
+  margin: 10px;
+  padding: 5px;
+}
+.form-contact .btn-send {
+  margin-left: 400px;
+}
+
+section {
+  border: solid 2px green;
+  width: 50%;
+  padding: 50px;
+}
+
 footer {
   display: flex;
   justify-content: center;
@@ -239,4 +265,9 @@ footer p {
   justify-content: center;
   width: 100%;
   flex-wrap: wrap;
+}
+
+#main-contact {
+  width: 100%;
+  display: flex;
 }/*# sourceMappingURL=style.css.map */
