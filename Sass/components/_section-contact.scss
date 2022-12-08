@@ -1,5 +1,21 @@
-section {
+@use "../utils/breakpoint" as *;
+
+.blc-contact {
     //border: solid 2px green;
     width: 50%;
     padding: 50px;
+}
+
+@include breakpoint(mobile-tablet) {
+    .blc-contact {
+        width: 100%;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+            &__iframe {
+                width: 100%;
+            }
+    }
 }

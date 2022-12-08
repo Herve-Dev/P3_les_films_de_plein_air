@@ -1,5 +1,14 @@
+@use "../utils/breakpoint" as *;
+
 #main-contact {
     //border: solid 2px red;
     width: 100%;
     display: flex;
+    background-color: #1e272e;
+}
+
+@include breakpoint(mobile-tablet) {
+    #main-contact {
+        flex-direction: column;
+    }
 }

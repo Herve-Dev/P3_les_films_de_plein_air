@@ -5,6 +5,7 @@
     height: 350px;
     display: flex;
     justify-content: space-around;
+    background-color: #1e272e;
 }
 
 @include breakpoint(mobile-tablet) {
